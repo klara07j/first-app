@@ -19,26 +19,26 @@ const ListScreen = () => {
             <Text>List Screen</Text>
             <Flatlist horizontal = {true}
             showsHorizontalScrollIndicator = {false}
-            keyExtractor = {student => student.surname}
+            keyExtractor = {(student) => student.surname}
             data = {Students}
             renderItem = {({item}) => {
-                return <Text style={styles.studentWrapper}>{item.name}-{item.surname}-{item.age}</Text>
+                return( <Text style={styles.studentWrapper}>{item.name}-{item.surname}-{item.age}</Text>);
 
             }} />
             <Text>Animal List</Text>
             <Flatlist
-            vertical = {true}
+            horizontal = {false}
             data = {Animals}
             renderItem = {({item}) => {
-                return <Text style={styles.animalWrapper}>{item.type}-{item.species}</Text>
+                return( <Text style={styles.animalWrapper}>{item.type}-{item.species}</Text>);
             }}
             />
         </View>
-    )
-}
+    );
+};
 
-const style = StyleSheet.create ({
+const styles = StyleSheet.create ({
 
-})
+});
 
 export default ListScreen;
