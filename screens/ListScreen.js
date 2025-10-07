@@ -1,5 +1,5 @@
 import React from "react"
-import {Text, StyleSheet, Flatlist, View} from "react-native"
+import {Text, StyleSheet, Flatlist, View, Button} from "react-native"
 
 const Students = [
     {name: "Klara", surname: "Jovanović", age: "18"},
@@ -13,7 +13,7 @@ const Animals = [
     {type: "brown", species: "grizzli"}
 ];
 
-const ListScreen = () => {
+const ListScreen = (props) => {
     return (
         <View>
             <Text>List Screen</Text>
@@ -32,6 +32,10 @@ const ListScreen = () => {
             renderItem = {({item}) => {
                 return( <Text style={styles.animalWrapper}>{item.type}-{item.species}</Text>);
             }}
+            />
+            <Button
+                title="Go back"
+                onPress={() => props.navigation.goBack()}
             />
         </View>
     );
