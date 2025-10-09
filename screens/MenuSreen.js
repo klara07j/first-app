@@ -15,7 +15,15 @@ const MenuScreen = () =>  {
                 onPress={() => props.navigation.navigate("Quiz")}>
                 <Text>Go to Quiz Screen</Text>
             </TouchableOpacity>
+            <Button
+                title="go to List Screen"
+                onPress={() => props.navigation.navigate("Students")}
+            />
         </View>
+        // add another button in the Homescreen and add navigation from "menuScreen" to this new screen usin Button
+        // add another button in the Homescreen that navigates back to the MenuScreen
+        // create Profilescreen and add a TouchableOpacity in the Homescreen that navigates to "Profilescreen"
+        //add a button in the Profilescreen that navigates back to the Homescreen
     );
 };
 
