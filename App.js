@@ -10,6 +10,7 @@ import ButtonScreen from './screens/ButtonScreen';
 import QuizScreen from './screens/QuizScreen';
 import MenuScreen from './screens/MenuSreen';
 import StudentsScreen from './screens/StudentsScreen';
+import ProfileScreen from './screens/Challenge-profileScreen';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ export default function App() {
        <Stack.Screen name="Button" component={ButtonScreen}></Stack.Screen>
        <Stack.Screen name="Menu" component={MenuScreen}></Stack.Screen>
        <Stack.Screen name="Students" component={StudentsScreen}></Stack.Screen>
+       <Stack.Screen name="Profile" component={ProfileScreen}></Stack.Screen>
      </Stack.Navigator>
     </NavigationContainer>
  );

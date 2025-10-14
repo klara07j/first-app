@@ -23,4 +23,4 @@ const style = StyleSheet.create({
     },
 });
 
-export default ExerciseScreen;
+export default ExerciseScreen; 
