@@ -19,6 +19,10 @@ const MenuScreen = () =>  {
                 title="go to List Screen"
                 onPress={() => props.navigation.navigate("Students")}
             />
+             <Button
+                title="go to Countries Screen"
+                onPress={() => props.navigation.navigate("Countries")}
+            />
         </View>
         // add another button in the Homescreen and add navigation from "menuScreen" to this new screen usin Button
         // add another button in the Homescreen that navigates back to the MenuScreen

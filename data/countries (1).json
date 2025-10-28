@@ -3,36 +3,42 @@
         "id": 1,
         "name": "Cappadocia",
         "country": "Turkey",
-        "description": "Cappadocia, a semi-arid region in central Turkey, is known for its distinctive “fairy chimneys,” tall, cone-shaped rock formations clustered in Monks Valley, Göreme and elsewhere."
+        "description": "Cappadocia, a semi-arid region in central Turkey, is known for its distinctive “fairy chimneys,” tall, cone-shaped rock formations clustered in Monks Valley, Göreme and elsewhere.",
+        "population": "Total polulation of Cappadocia is 4.2 mil"
     },
     {
         "id": 2,
         "name": "Philippines",
         "country": "Banaue",
-        "description":  "An archipelago of some 7,000 islands, the Philippines is a fun destination"
+        "description":  "An archipelago of some 7,000 islands, the Philippines is a fun destination",
+        "population": "Total polulation of Philippines is 2.3 mil"
     },
     {
         "id" : 3,
         "name" : "Vietnam",
         "country" : "Thailand",
-        "description" : "On your next trip to South East Asia skip the touristy Thailand and head to Vietnam instead. "
+        "description" : "On your next trip to South East Asia skip the touristy Thailand and head to Vietnam instead. ",
+        "population": "Total polulation of Vietnam is 5.3 mil"
     },
     {
         "id" : 4,
         "name" : "Indonesia",
         "country" : "Bali ",
-        "description" : "Another country with numerous islands to explore is Indonesia."
+        "description" : "Another country with numerous islands to explore is Indonesia.",
+        "population": "Total polulation of Indonesia is 3.6 mil"
     },
     {
         "id" : 5,
         "name" : "Vienna’s ",
         "country" : "Austria",
-        "description" : "Vienna’s medieval architecture, cobbled streets and quaint cafes make it a charming city. "
+        "description" : "Vienna’s medieval architecture, cobbled streets and quaint cafes make it a charming city. ",
+        "population": "Total polulation of Vienna is 4.3 mil"
     },
     {
         "id" : 6,
         "name" : "Kruger National Park",
         "country" : "South Africa",
-        "description" : "Offering a wide array of options, South Africa is another destination that should be on your bucket list."
+        "description" : "Offering a wide array of options, South Africa is another destination that should be on your bucket list.",
+        "population": "Total polulation of Kurger National Park is 1336"
     }
 ]
