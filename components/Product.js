@@ -4,7 +4,7 @@ import { Text, StyleSheet, View, Image } from "react-native";
 const Oneproduct = (props) => {
     return (
         <View style={styles.wrapper}>
-            <Image source={{uri: produkt.image}} style={styles.img}></Image>
+            <Image source={{uri: `${props.image}` }} style={styles.img} />
             <View style={styles.detalji}>
                 <Text style={styles.ime}>{props.name}</Text>
                 <Text style={styles.category}>{props.category}</Text>
@@ -39,6 +39,8 @@ const styles = StyleSheet.create({
         widht: '100%',
         height: 160,
         resizeMode: "contain",
+        borderTopLeftRadius: 6,
+        borderTopRightRadius:6,
     },
     detalji: {
         padding: 10,

@@ -1,8 +1,7 @@
 import React from "react";
-import { Text, StyleSheet, View, FlatList } from "react-native";
+import { Text, StyleSheet, View, FlatList, ScrollView } from "react-native";
 import data from "../data/products.json";
-import component from "../components/Product";
-import { StatusBar } from "expo-status-bar";
+import Product from "../components/Product";
 
 class ProductScreen extends React.Component {
     constructor() {
@@ -21,12 +20,21 @@ class ProductScreen extends React.Component {
     render() {
         return(
             <View style={styles.glavni}>
-                <StatusBar barStyle="dark-content" backgroundColor="#fff"/>
                 <Text style={styles.screenTitle}>Products Screen</Text>
                 <FlatList
-                    data={this.state.products}
-                    keyExtractor={item => item.id}
-                    renderItem={this.rendercomponent}
+                     data={this.state.products}
+                    showsVerticalScrollIndicator={false}
+                    renderItem={({item}) => (
+                         <View>
+                            <Product name={item.name} 
+                            category={item.categoryt}
+                            description={item.description}
+                             stock={item.stock}
+                            price={item.price}
+                            img={item.image}
+                             />
+                        </View>
+                    )}
                 />
             </View>
         );
